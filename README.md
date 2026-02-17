@@ -1,7 +1,4 @@
 # FINAL-PROJECT
-
-## Pages
-
 <ul>
     <li><a href="frogworld_html/index.html" target="_blank">Home</a></li>
     <li><a href="frogworld_html/habitats.html" target="_blank">Habitats</a></li>
