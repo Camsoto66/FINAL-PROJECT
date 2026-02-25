@@ -1,5 +1,13 @@
 /* Frog World - Final Project CSS */
 
+:root{
+  --green: #2e7d32;   /* main accent */
+  --light: #e6ffe6;   /* page background */
+  --card: #ffffff;    /* card backgrounds */
+  --line: #e5e7eb;    /* border color */
+  --max: 1000px;      /* max content width */
+}
+
 *{ box-sizing: border-box; }
 
 body{
@@ -144,7 +152,8 @@ nav a.active{
   padding-left: 18px;
 }
 
-.footer{
+/* Works whether you use <footer> or <div class="footer"> */
+footer, .footer{
   margin-top: 22px;
   background: var(--green);
   color: white;
@@ -171,62 +180,64 @@ nav a.active{
   }
 }
 
+/* Side layout (images on the side) */
 .side-layout {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .side-images {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .side-images img {
-    width: 100%;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 .main-content {
-    flex: 2;
+  flex: 2;
 }
 
 /* Responsive: stack on small screens */
 @media (max-width: 768px) {
-    .side-layout {
-        flex-direction: column;
-    }
+  .side-layout {
+    flex-direction: column;
+  }
 }
+
+/* Right image layout (text left, image right) */
 .right-image-layout {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .right-image-layout .text {
-    flex: 2;
-    min-width: 250px;
+  flex: 2;
+  min-width: 250px;
 }
 
 .right-image-layout .image {
-    flex: 1;
-    min-width: 200px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .right-image-layout img {
-    width: 100%;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 /* Responsive: stack on small screens */
 @media (max-width: 768px) {
-    .right-image-layout {
-        flex-direction: column;
-    }
+  .right-image-layout {
+    flex-direction: column;
+  }
 }
-
